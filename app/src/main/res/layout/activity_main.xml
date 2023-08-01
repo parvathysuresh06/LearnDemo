@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/questions"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="400dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="25dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="LOG IN"
+                    android:textSize="30dp"
+                    android:textColor="#734F96"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:textStyle="bold">
+                </androidx.appcompat.widget.AppCompatTextView>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#8F83CC"
+                    android:text="USER NAME"
+                    android:textSize="15dp"
+                    android:textStyle="bold">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_backgroung"
+                    android:hint="Enter your User Name">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#8F83CC"
+                    android:text="PASSWORD"
+                    android:textSize="15dp"
+                    android:textStyle="bold">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+android:inputType="textPassword"
+                    android:maxLength="10"
+                    android:background="@drawable/edittext_backgroung"
+                    android:hint="Enter Password">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+                <Button
+                    android:id="@+id/log_button"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@color/black"
+                    android:text="Log In">
+
+                </Button>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
